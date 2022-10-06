@@ -1,0 +1,10 @@
+game_rules.c :
+ test_victory [ ]  //réunis les deux fonction de test (diag & ligne & col) et teste si un nouveau placement est une victoire
+
+player.c :
+    play [ ] // commentaire dans la fonction
+
+game_loop.c :
+    boucle de jeu
+    création des joueurs
+    

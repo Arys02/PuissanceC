@@ -1,0 +1,6 @@
+#IFNDEF GAME_LOOP_H
+#DEFINE GAME_LOOP_H
+
+//void 
+
+#ENDIF
