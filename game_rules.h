@@ -1,6 +1,7 @@
 #ifndef GAME_RULES_H
 #define GAME_RULES_H
 
+
 typedef  struct{
   int nbPlayer;
   int rows;

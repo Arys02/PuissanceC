@@ -58,4 +58,3 @@ int update_nb_columns(gameRules* game_rules, int new_nb_columns){
     return 1;
   }
 }
-

@@ -1,5 +1,8 @@
-#IFNDEF PLAYER_H
-#DEFINE PLAYER_H
+#ifndef PLAYER_H
+#define PLAYER_H
+
+#include "grid.h"
+#include "victory_check.h"
 
 typedef struct {
     char symbol;
@@ -7,7 +10,9 @@ typedef struct {
 } Player;
 
 Player *create_player(char *name, char symbole);
+Player **create_players(int n);
 void free_player(Player *p);
-int play(Player *p, Grid *g, int x);
+void free_players(Player **p, int n);
+int play(Player *p, Grid *g, int x, gameRules *gr);
 
-#ENDIF
+#endif

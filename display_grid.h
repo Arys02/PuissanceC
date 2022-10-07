@@ -3,16 +3,6 @@
 
 #include "grid.h"
 
-void display_grid(Grid *grid) {
-
-  for (int i = 0; i < grid->rows; i++) {
-    for (int j = 0; j <= grid->columns; j++) {
-
-      printf("| %c",grid->Grid[i][j]);
-    }
-    printf("\n");
-  }
-  return;
-}
+void display_grid(Grid *grid);
 
 #endif

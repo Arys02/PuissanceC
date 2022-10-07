@@ -9,7 +9,7 @@ gameRules * getRules(char* file){
     gameRules *game_rules = malloc(sizeof(gameRules));
     char *ligne = malloc(sizeof(char) * 10);
     int cpt = 1;
-    while(fgets(ligne, 20, f) && cpt < 4){
+    while(fgets(ligne, 20, f) && cpt <= 4){
       if(cpt == 1){
         char *token = strtok(ligne, "=");
         token = strtok(NULL, "=");
@@ -26,6 +26,12 @@ gameRules * getRules(char* file){
         char *token = strtok(ligne, "=");
         token = strtok(NULL, "=");
         game_rules->columns = atoi(token);
+        cpt++;
+      }
+      else if(cpt == 4){
+        char *token = strtok(ligne, "=");
+        token = strtok(NULL, "=");
+        game_rules->puissance = atoi(token);
         cpt++;
       }
       

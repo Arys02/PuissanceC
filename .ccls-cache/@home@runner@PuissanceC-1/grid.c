@@ -40,7 +40,7 @@ int update_grid(Grid *g, int x, int y, char c){
 
 char *get_value(Grid *g, int x, int y){
     if (x >= g->rows || x < 0 || y >= g->columns || y < 0)
-        return -1;
-    return g->grid[x][y];
+        return "\0";
+    //return g->grid[x][y];
     
 }
